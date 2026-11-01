@@ -1,4 +1,4 @@
-""" num = int(input("Введите целое число: "))
+"""num = int(input("Введите целое число: "))
 if num % 2 == 0:
     print("Чётное")
 else:
@@ -12,7 +12,7 @@ if num > 0:
 elif num < 0:
     print("Отрицательное")
 else:
-    print("Ноль") """
+    print("Ноль")"""
 
 """ a = float(input("Введите первое число: "))
 b = float(input("Введите второе число: "))
@@ -89,7 +89,7 @@ if (a + b > c) and (a + c > b) and (b + c > a):
 else:
     print("Треугольник не существует") """
 
-month = int(input("Введите номер месяца: "))
+""" month = int(input("Введите номер месяца: "))
 if (month == 12) or (month == 1) or (month == 2):
     print("Зима")
 elif (month >= 3) and (month <= 5):
@@ -99,4 +99,60 @@ elif (month >= 6) and (month <= 8):
 elif (month >= 9) and (month <= 11):
     print("Осень")
 else:
-    print("Некорректный номер месяца")
+    print("Некорректный номер месяца") """
+
+""" import random
+num = random.randint(1, 100)
+guess = int(input("Введите число от 1 до 100: "))
+while guess != num:
+    if guess < num:
+        print("Больше")
+    else:
+        print("Меньше")
+    guess = int(input("Попробуйте ещё раз: "))
+print("Вы угадали") """
+
+""" num = input("Введите целое число: ")
+if num.lstrip("-").isdigit():
+    num = int(num)
+    if num >= 0:
+        print(f"Двоичная система: {bin(num)[2:]}")
+        print(f"Восьмеричная система: {oct(num)[2:]}")
+        print(f"Шестнадцатеричная система: {hex(num)[2:]}")
+    else:
+        print("Введите положительное число или ноль")
+else:
+    print("Ошибка ввода") """
+
+""" height = float(input("Введите рост в метрах: "))
+weight = float(input("Введите вес в кг: "))
+if (weight <= 0) or (height <= 0):
+    print("Ошибка ввода")
+else:
+    imt = weight / (height**2)
+    print(f"ИМТ: {imt:.2f}")
+    if imt < 18.5:
+        print("Недостаточный вес")
+    elif imt < 25:
+        print("Норма")
+    elif imt < 30:
+        print("Избыточный вес")
+    else:
+        print("Ожирение") """
+
+x = float(input("Введите x: "))
+y = float(input("Введите y: "))
+if (x == 0) and (y == 0):
+    print("Точка находится в начале координат")
+elif x == 0:
+    print("Точка находится на оси Y")
+elif y == 0:
+    print("Точка находится на оси X")
+elif (x > 0) and (y > 0):
+    print("Первая четверть")
+elif (x < 0) and (y > 0):
+    print("Вторая четверть")
+elif (x < 0) and (y < 0):
+    print("Третья четверть")
+else:
+    print("Четвёртая четверть")
